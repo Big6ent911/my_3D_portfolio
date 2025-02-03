@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex gap-3">
         {/* GitHub */}
         <div className="social-icon">
-          <a href="https://github.com/your-github-handle" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/bigsaint911" target="_blank" rel="noopener noreferrer">
             <img src="/assets/github.svg" alt="github" className="w-8 h-8 object-cover" />
           </a>
         </div>
@@ -31,14 +31,7 @@ const Footer = () => {
             <img src="/assets/instagram.svg" alt="instagram" className="w-8 h-8 object-cover" />
           </a>
         </div>
-
-        {/* WhatsApp (FontAwesome) */}
-        <div className="social-icon">
-          <a href="https://wa.me/2349036515182" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faWhatsapp} className="w-8 h-8 object-cover" />
-          </a>
         </div>
-      </div>
 
       <p className="text-white-500">© 2024 Daniel Saint. All rights reserved.</p>
     </footer>
