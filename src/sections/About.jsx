@@ -25,7 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Daniel Onoyeyan</p>
               <p className="grid-subtext">
-                With a year of experience, I have honed my skills in both frontend and backend dev, creating dynamic
+                I have honed my skills in both frontend and backend dev, creating dynamic
                 and responsive websites.
               </p>
             </div>

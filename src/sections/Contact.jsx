@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import Alert from '../components/Alert'; // Import the Alert component
 
 const Contact = () => {
   const formRef = useRef();
@@ -22,7 +23,7 @@ const Contact = () => {
       formData.append('message', form.message);
 
       // Send data to Formspree API
-      const response = await fetch('https://formspree.io/f/xnnnjowa', {  // Replace with your Formspree form endpoint
+      const response = await fetch('https://formspree.io/f/xnnnjowa', {
         method: 'POST',
         body: formData,
         headers: {
@@ -30,7 +31,6 @@ const Contact = () => {
         },
       });
 
-      // Check if the response is successful
       if (response.ok) {
         setLoading(false);
         setAlert({
@@ -38,23 +38,21 @@ const Contact = () => {
           message: 'Your message has been sent successfully!',
           type: 'success',
         });
-        setForm({ name: '', email: '', message: '' });  // Clear form after successful submission
+        setForm({ name: '', email: '', message: '' });
 
-        // Hide alert after 5 seconds
         setTimeout(() => {
           setAlert({ show: false, message: '', type: '' });
         }, 5000);
       } else {
         setLoading(false);
         const errorMessage = await response.text();
-        console.error('Formspree Error:', errorMessage);  // Log error message from Formspree
+        console.error('Formspree Error:', errorMessage);
         setAlert({
           show: true,
           message: 'Something went wrong, please try again!',
           type: 'error',
         });
 
-        // Hide alert after 5 seconds
         setTimeout(() => {
           setAlert({ show: false, message: '', type: '' });
         }, 5000);
@@ -68,7 +66,6 @@ const Contact = () => {
         type: 'error',
       });
 
-      // Hide alert after 5 seconds
       setTimeout(() => {
         setAlert({ show: false, message: '', type: '' });
       }, 5000);
@@ -136,17 +133,8 @@ const Contact = () => {
             </button>
           </form>
 
-          {/* Notification directly below the form */}
-          {alert.show && (
-            <div
-              className={`mt-4 p-4 text-white rounded-lg shadow-md ${
-                alert.type === 'success' ? 'bg-green-500' : 'bg-red-500'
-              }`}
-              role="alert"
-            >
-              {alert.message}
-            </div>
-          )}
+          {/* Alert Notification below the form */}
+          {alert.show && <Alert type={alert.type} text={alert.message} />}
         </div>
       </div>
     </section>

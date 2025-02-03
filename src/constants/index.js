@@ -25,7 +25,7 @@ export const navLinks = [
     {
       id: 1,
       name: 'Emily Johnson',
-      position: 'Marketing Director at GreenLeaf',
+      position: 'Marketing Director at Herojobs',
       img: 'assets/review1.png',
       review:
         'Working with Daniel was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
@@ -33,7 +33,7 @@ export const navLinks = [
     {
       id: 2,
       name: 'Mark Rogers',
-      position: 'Founder of TechGear Shop',
+      position: 'Founder of Tech',
       img: 'assets/review2.png',
       review:
         'Daniel’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
@@ -41,7 +41,7 @@ export const navLinks = [
     {
       id: 3,
       name: 'John Dohsas',
-      position: 'Project Manager at UrbanTech ',
+      position: 'Project Manager',
       img: 'assets/review3.png',
       review:
         'I can’t say enough good things about Daniel. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
@@ -49,7 +49,7 @@ export const navLinks = [
     {
       id: 4,
       name: 'Ether Smith',
-      position: 'CEO of BrightStar Enterprises',
+      position: 'CEO of BrightStar',
       img: 'assets/review4.png',
       review:
         'Daniel was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
@@ -261,7 +261,7 @@ export const navLinks = [
     {
       id: 1,
       name: 'Framer',
-      pos: 'Lead Web Developer',
+      pos: 'Web Developer',
       duration: '2024 - Present',
       title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
       icon: '/assets/framer.svg',
@@ -271,7 +271,7 @@ export const navLinks = [
       id: 2,
       name: 'Figma',
       pos: 'Web Developer',
-      duration: '2023 - 2024',
+      duration: '2024 - Present',
       title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
       icon: '/assets/figma.svg',
       animation: 'clapping',
@@ -280,7 +280,7 @@ export const navLinks = [
       id: 3,
       name: 'Notion',
       pos: 'Junior Web Developer',
-      duration: '2022 - 2024',
+      duration: '2024 - Present',
       title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
       icon: '/assets/notion.svg',
       animation: 'salute',
